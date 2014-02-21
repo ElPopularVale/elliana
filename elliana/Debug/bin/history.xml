@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.4 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=elliana.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\elliana -TC:\CooCox\CoIDE\configuration\ProgramData\elliana/arm-gcc-link.ld -g">
+      <target file="elliana.elf" lastModified="14456289616">
+         <source file="..\obj\enc28j60_jose.o" lastModified="1445625a2fb"/>
+         <source file="..\obj\usart_jose.o" lastModified="1445625a355"/>
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="1445625a3d7"/>
+         <source file="..\obj\stm32f0_spi_jose.o" lastModified="1445625a445"/>
+         <source file="..\obj\main.o" lastModified="144562893d7"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="1445625a4a4"/>
+         <source file="..\obj\stm32f0xx_spi.o" lastModified="1445625a517"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="1445625a571"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="1445625a5fd"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="1445625a643"/>
+         <source file="..\obj\core_cm0.o" lastModified="1445625a684"/>
+      </target>
+   </processor>
+</history>
