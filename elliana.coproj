@@ -98,8 +98,8 @@
     <File name="cmsis_boot/system_stm32f0xx.h" path="cmsis_boot/system_stm32f0xx.h" type="1"/>
     <File name="enc28j60_jose" path="" type="2"/>
     <File name="stm_lib/src/stm32f0xx_usart.c" path="stm_lib/src/stm32f0xx_usart.c" type="1"/>
-    <File name="enc28j60_jose/stm32f0_spi_jose.c" path="enc28j60_jose/stm32f0_spi_jose.c" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_rcc.h" path="stm_lib/inc/stm32f0xx_rcc.h" type="1"/>
+    <File name="enc28j60_jose/stm32f0_spi_jose.c" path="enc28j60_jose/stm32f0_spi_jose.c" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
     <File name="stm_lib/src/stm32f0xx_gpio.c" path="stm_lib/src/stm32f0xx_gpio.c" type="1"/>
     <File name="main.c" path="main.c" type="1"/>

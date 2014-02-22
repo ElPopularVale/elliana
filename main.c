@@ -47,10 +47,6 @@ int main(void)
 
 	uint8_t rlen = 0;
 
-	usartSend(HIGH_BYTE(ENC_BUFFER_SIZE));
-	usartSend(LOW_BYTE(ENC_BUFFER_SIZE));
-
-
 	ETH_send_packet(testBuffer, 514);
 
     while(1){
@@ -58,19 +54,32 @@ int main(void)
 		rlen = ETH_ReceivePacket(testBuffer, 514);
 //		usartSend(0xC0);
 
-
-//		usartSend(ETH_ReadETHControlRegister(EPKTCNT));
 		if (rlen != 0){
 			usartSend(0xC1); //Packet received
-//			HIGH_BYTE(nextPacketPointer);
-//			for (i=0; i <6; i++){
+			usartSend(rlen);
+//			for (i=0; i <rlen; i++){
 //					usartSend(testBuffer[i]);
 //			}
+			testBuffer[0]=0xE8;
+			testBuffer[1]=0x03;
+			testBuffer[2]=0x9A;
+			testBuffer[3]=0xAE;
+			testBuffer[4]=0x00;
+			testBuffer[5]=0x9C;
+
+			testBuffer[6]=0x00;
+			testBuffer[7]=0xAA;
+			testBuffer[8]=0xBB;
+			testBuffer[9]=0xCC;
+			testBuffer[10]=0xDE;
+			testBuffer[11]=0x02;
+			ETH_send_packet(testBuffer, rlen);
 		}
-		for (i=0; i<1000000; ++i);
-		GPIO_WriteBit(GPIOB, GPIO_Pin_10, led_state ? Bit_SET : Bit_RESET);
-		led_state = !led_state;
-		GPIO_WriteBit(GPIOB, GPIO_Pin_11, led_state ? Bit_SET : Bit_RESET);
+
+//		for (i=0; i<1000000; ++i);
+//		GPIO_WriteBit(GPIOB, GPIO_Pin_10, led_state ? Bit_SET : Bit_RESET);
+//		led_state = !led_state;
+//		GPIO_WriteBit(GPIOB, GPIO_Pin_11, led_state ? Bit_SET : Bit_RESET);
 		}
 }
 

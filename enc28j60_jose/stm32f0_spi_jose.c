@@ -1,5 +1,6 @@
 #include "stm32f0_spi_jose.h"
 #include "enc28j60.h"
+#include "usart_jose.h"
 
 //Last bank selected
 uint8_t last_bank = 0;
@@ -164,8 +165,8 @@ void ETH_switch_bank(uint8_t bank)
 void ETH_ReadBufferMemory(uint8_t *buffer, uint16_t length){
 	uint16_t i;
 	ETHSELECT();
-		//Send opcode (010) and 5-bit constant 0x1A
-		spi((0b010 << 5) | 0x1A);
+		//Send opcode (001) and 5-bit constant 0x1A
+		spi((0b001 << 5) | 0x1A);
 		for(i = 0; i<length; i++){
 			//Save the value at the current location of the buffer pointer, then increase buffer pointer
 			*buffer++ = spi(0);
@@ -176,8 +177,8 @@ void ETH_ReadBufferMemory(uint8_t *buffer, uint16_t length){
 uint8_t ETH_ReadOneWordFromBufferMemory(){
 	uint8_t data = 0;
 	ETHSELECT();
-		//Send opcode (010) and 5-bit constant 0x1A
-		spi((0b010 << 5) | 0x1A);
+		//Send opcode (001) and 5-bit constant 0x1A
+		spi((0b001 << 5) | 0x1A);
 		data = spi(0);
 	ETHDESELECT();
 	return data;

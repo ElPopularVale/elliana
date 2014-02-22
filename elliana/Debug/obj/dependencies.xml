@@ -22,7 +22,7 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="1443bb2ac23">
+      <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="14456a1bc1f">
          <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
          <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
          <include file="..\..\..\usart_jose\usart_jose.h"/>
@@ -36,9 +36,10 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_usart.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="1429fd52ac0">
+      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="14456a2d024">
          <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
          <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
+         <include file="..\..\..\usart_jose\usart_jose.h"/>
       </source>
       <source file="..\..\..\usart_jose\usart_jose.h" lastModified="14437716a11">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
