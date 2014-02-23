@@ -14,36 +14,54 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/elliana/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1677" selectionTopPixel="816"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1484" selectionTopPixel="714"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60.h" partName="enc28j60.h" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60.h" title="enc28j60.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/enc28j60.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="236" selectionTopPixel="672"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.c" partName="enc28j60_jose.c" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.c" title="enc28j60_jose.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1777" selectionTopPixel="96"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="166" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.c" partName="stm32f0_spi_jose.c" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/stm32f0_spi_jose.c" title="stm32f0_spi_jose.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/stm32f0_spi_jose.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6129" selectionTopPixel="2604"/>
 </editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" partName="port.c" path="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" title="port.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="90" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.h" partName="system_stm32f0xx.h" path="C:/CooCox/CoIDE/workspace/elliana/cmsis_boot/system_stm32f0xx.h" title="system_stm32f0xx.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/cmsis_boot/system_stm32f0xx.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="90" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" partName="tasks.c" path="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/tasks.c" title="tasks.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/tasks.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/FreeRTOS/Source/tasks.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="26">
 <expanded>
 <element path="/elliana"/>
 <element path="/elliana/enc28j60_jose"/>
+<element path="/elliana/FreeRTOS"/>
+<element path="/elliana/FreeRTOS/Source"/>
+<element path="/elliana/FreeRTOS/Source/include"/>
 </expanded>
 <selection>
-<element path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
+<element path="/elliana/main.c"/>
 </selection>
 </viewState>
 </view>
@@ -149,131 +167,14 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/FreeRTOS/Source/tasks.c"/>
 </editors>
 <item historyLabel="stm32f0_spi_jose.c" index="3">
-<position/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1804" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1219" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1804" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1804" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1723" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1804" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1804" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1723" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1723" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="41" y="8"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1723" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="41" y="8"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1570" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="5949" y="31"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1575" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2157" y="20"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="6129" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2178" y="6"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1938" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2178" y="6"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2178" y="6"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="6129" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1938" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2944" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1310" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2944" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="6129" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="2944" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1257" y="9"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
 <position info="not_deleted" x="6129" y="0"/>
 </item>
 <item historyLabel="enc28j60_jose.c" index="2">
@@ -296,9 +197,132 @@
 </item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1312" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1716" y="0"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="13488" y="80"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="259" y="0"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="13379" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4578" y="0"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="13488" y="80"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="13634" y="0"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="13488" y="80"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="92" y="29"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="1686" y="87"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4578" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="6">
+<position info="not_deleted" x="236" y="12"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="7">
+<position info="not_deleted" x="166" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="6">
+<position info="not_deleted" x="236" y="12"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4578" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="7">
+<position info="not_deleted" x="166" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="6">
+<position info="not_deleted" x="0" y="19"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="1686" y="87"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="90" y="0"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="1693" y="8"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4578" y="0"/>
+</item>
+<item historyLabel="stm32f0_spi_jose.c" index="8">
+<position info="not_deleted" x="6129" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="7">
+<position info="not_deleted" x="166" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="6">
+<position info="not_deleted" x="0" y="19"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="1693" y="8"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="90" y="0"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="1686" y="87"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="123" y="0"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="111" y="0"/>
+</item>
+<item historyLabel="tasks.c" index="9">
+<position info="not_deleted" x="68140" y="0"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="111" y="0"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="0" y="90"/>
+</item>
+<item historyLabel="tasks.c" index="9">
+<position info="not_deleted" x="68140" y="0"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="90" y="0"/>
+</item>
+<item historyLabel="tasks.c" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="6">
+<position info="not_deleted" x="0" y="19"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4167" y="0"/>
+</item>
+<item historyLabel="tasks.c" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system_stm32f0xx.h" index="5">
+<position info="not_deleted" x="90" y="0"/>
+</item>
+<item historyLabel="port.c" index="4">
+<position info="not_deleted" x="0" y="90"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="7">
+<position info="not_deleted" x="166" y="0"/>
 </item>
 <item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="1716" y="0"/>
+<position info="not_deleted" x="4167" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -307,6 +331,15 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" tooltip="elliana/FreeRTOS/Source/tasks.c">
+<persistable path="/elliana/FreeRTOS/Source/tasks.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.h" tooltip="elliana/cmsis_boot/system_stm32f0xx.h">
+<persistable path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c">
+<persistable path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.c" tooltip="elliana/enc28j60_jose/stm32f0_spi_jose.c">
 <persistable path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
 </file>
@@ -342,15 +375,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_rcc.h" tooltip="elli_usart_test/stm_lib/inc/stm32f0xx_rcc.h">
 <persistable path="/elli_usart_test/stm_lib/inc/stm32f0xx_rcc.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.h" tooltip="elli_usart_test/stm_lib/inc/stm32f0xx_gpio.h">
-<persistable path="/elli_usart_test/stm_lib/inc/stm32f0xx_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="elliana/main.c">
-<persistable path="/elliana/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_usart.h" tooltip="elliana/stm_lib/inc/stm32f0xx_usart.h">
-<persistable path="/elliana/stm_lib/inc/stm32f0xx_usart.h"/>
 </file>
 </mruList>
 </workbench>

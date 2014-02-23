@@ -1,3 +1,5 @@
+//Jose: These includes are to solve compilation errors after copying FreeRTOS source files
+#include "stdint.h"
 /**
   ******************************************************************************
   * @file    system_stm32f0xx.h
