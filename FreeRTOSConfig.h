@@ -85,6 +85,9 @@
 	extern uint32_t SystemCoreClock;
 #endif
 
+#include <stdint.h>
+extern uint32_t SystemCoreClock;
+
 #define configUSE_PREEMPTION			1
 #define configUSE_IDLE_HOOK				0
 #define configUSE_TICK_HOOK				1

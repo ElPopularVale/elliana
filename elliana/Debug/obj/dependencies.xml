@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\FreeRTOS\Source\include /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\FreeRTOS\Source /I..\..\..\workspace\elliana\FreeRTOS /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 /I..\..\..\workspace /I..\..\..\workspace\elliana\usart_jose /I..\..\..\workspace\elliana\stm_lib /I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
+   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\FreeRTOS\Source\include /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\FreeRTOS\Source /I..\..\..\workspace\elliana\FreeRTOS /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 /I..\..\..\workspace /I..\..\..\workspace\elliana\usart_jose /I..\..\.. /I..\..\..\workspace\elliana\stm_lib /I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
       <source file="..\..\..\FreeRTOS\Source\event_groups.c" lastModified="1444534e97c">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\event_groups.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="14459d53913">
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="1445f746f68">
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\croutine.h" lastModified="1444534e594">
          <include file="..\..\..\FreeRTOS\Source\include\list.h"/>
@@ -18,7 +18,7 @@
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
       </source>
-      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h" lastModified="1444534e621">
+      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h" lastModified="1445f8bcdd1">
       </source>
       <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="1444a3d9e50">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
@@ -39,13 +39,6 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\enc28j60_jose\enc28j60.h" lastModified="1443baf9720">
-      </source>
-      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="14456a2d024">
-         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
-         <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
-         <include file="..\..\..\usart_jose\usart_jose.h"/>
-      </source>
       <source file="..\..\..\FreeRTOS\Source\include\event_groups.h" lastModified="1444534e594">
          <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
       </source>
@@ -53,8 +46,7 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c" lastModified="14459d53518">
-         <include file="..\..\..\cmsis_boot\system_stm32f0xx.h"/>
+      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c" lastModified="1444534e611">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
       </source>
@@ -72,17 +64,14 @@
       <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="144562254b1">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
       </source>
+      <source file="..\..\..\enc28j60_jose\enc28j60_jose.h" lastModified="1445fa29c36">
+      </source>
       <source file="..\..\..\usart_jose\usart_jose.c" lastModified="1443770635d">
          <include file="..\..\..\usart_jose\usart_jose.h"/>
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\StackMacros.h" lastModified="1444534e5c3">
       </source>
-      <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="14456a1bc1f">
-         <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
-         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
-         <include file="..\..\..\usart_jose\usart_jose.h"/>
-      </source>
-      <source file="..\..\..\FreeRTOSConfig.h" lastModified="1444534d015">
+      <source file="..\..\..\FreeRTOSConfig.h" lastModified="1445f906dbf">
       </source>
       <source file="..\..\..\cmsis_boot\stm32f0xx.h" lastModified="144562258c1">
          <include file="..\..\..\cmsis_core\core_cm0.h"/>
@@ -97,12 +86,12 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\main.c" lastModified="14459d53509">
+      <source file="..\..\..\main.c" lastModified="1445fa8b5b3">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
          <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
-         <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
+         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
          <include file="..\..\..\usart_jose\usart_jose.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
@@ -168,64 +157,6 @@
          <include file="..\..\..\FreeRTOS\Source\include\mpu_wrappers.h"/>
       </source>
       <source file="..\..\..\cmsis_core\core_cm0.h" lastModified="14456225cf4">
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\usart_jose /I..\..\..\workspace /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\stm_lib">
-      <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="144562254fc">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-      </source>
-      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h" lastModified="1429a6276da">
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="14456a2d024">
-         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
-         <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
-         <include file="..\..\..\usart_jose\usart_jose.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\src\stm32f0xx_spi.c" lastModified="14456225a4e">
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h" lastModified="14456225538">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-      </source>
-      <source file="..\..\..\usart_jose\usart_jose.h" lastModified="14437716a11">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_usart.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="144562254b1">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-      </source>
-      <source file="..\..\..\usart_jose\usart_jose.c" lastModified="1443770635d">
-         <include file="..\..\..\usart_jose\usart_jose.h"/>
-      </source>
-      <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="14456a1bc1f">
-         <include file="..\..\..\enc28j60_jose\enc28j60.h"/>
-         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
-         <include file="..\..\..\usart_jose\usart_jose.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="144562254b6">
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\inc\stm32f0xx_spi.h" lastModified="14456225a49">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\inc\stm32f0xx_usart.h" lastModified="14456228058">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="14456225547">
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="144562254c5">
-      </source>
-      <source file="..\..\..\stm_lib\src\stm32f0xx_usart.c" lastModified="1445622807b">
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_usart.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
    </includePath>
 </dependencies>

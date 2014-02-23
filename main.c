@@ -3,13 +3,20 @@
 #include "stm32f0xx_gpio.h"
 #include "stm32f0xx_rcc.h"
 #include "stm32f0_spi_jose.h"
-#include "enc28j60.h"
+#include "enc28j60_jose.h"
 #include "usart_jose.h"
 
 /* FreeRTOS includes. */
 #include "FreeRTOS.h"
 #include "task.h"
 #include "FreeRTOSConfig.h"
+
+//Global variables
+static int led_state=0;
+
+//FreeRTOS tasks
+static void task1( void *pvParameters );
+static void task2( void *pvParameters );
 
 void LED_init() {
 	GPIO_InitTypeDef gpio;
@@ -30,63 +37,108 @@ void LED_init() {
 	GPIO_Init(GPIOB, &gpio);
 }
 
+//Task 1: Toggle LEDs
+void task1( void *pvParameters )
+{
+	while(1)
+	{
+		GPIO_WriteBit(GPIOB, GPIO_Pin_10, led_state ? Bit_SET : Bit_RESET);
+		led_state = !led_state;
+		GPIO_WriteBit(GPIOB, GPIO_Pin_11, led_state ? Bit_SET : Bit_RESET);
+		vTaskDelay(500);
+	}
+}
+
+//Task 2: send a packet periodically
+void task2( void *testBuffer)
+{
+	TickType_t xNextWakeTime;
+	xNextWakeTime = xTaskGetTickCount();
+	const TickType_t xDelay = 500 / portTICK_PERIOD_MS; //500 ms
+	while(1)
+		{
+			ETH_send_packet(testBuffer, 514);
+			usartSend(0xC0); //Packet sent
+			vTaskDelayUntil(&xNextWakeTime, xDelay);
+		}
+
+}
 
 int main(void)
  {
-
+	//local variables
 	static int i;
-	static int led_state=0;
+	uint8_t rlen = 0;
 	uint8_t macAdress[6] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02 };
+	static uint8_t testBuffer[514] ={0xE8, 0x03, 0x9A, 0xAE, 0x00, 0x9C,		//Destination address
+								   	0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02,			//Source address
+								   	0x01, 0xF4,									//Type length
+								   	0, 1, 2, 3, 4, 5, 6, 7, 8, 9};				//Data
+
+	//Hardware initialization
 	LED_init();
 	ETH_SPI_init();
 	usartInit();
 	ETH_MAC_init(macAdress);
-	uint8_t testBuffer[514] = {0xE8, 0x03, 0x9A, 0xAE, 0x00, 0x9C,	//Destination address
-								   0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02,		//Source address
-								   0x01, 0xF4,					//Type length
-								   0, 1, 2, 3, 4, 5, 6, 7, 8, 9};	//Data
 
+	//Fill buffer with some data
 	for (i=0; i <500; i++){
 		testBuffer[14+i] = i*2;
 	}
 
-	uint8_t rlen = 0;
+	//Create tasks
+	xTaskCreate(task1,									/* The function that implements the task. */
+				"Task 1", 								/* The text name assigned to the task - for debug only as it is not used by the kernel. */
+				configMINIMAL_STACK_SIZE, 				/* The size of the stack to allocate to the task. */
+				NULL, 									/* The parameter passed to the task - just to check the functionality. */
+				1,								 		/* The priority assigned to the task. */
+				NULL );									/* The task handle is not required, so NULL is passed. */
+	xTaskCreate(task2, "Task 1", configMINIMAL_STACK_SIZE, testBuffer, 2, NULL );
 
-	ETH_send_packet(testBuffer, 514);
+	/* Start the tasks and timer running. */
+	vTaskStartScheduler();
 
-    while(1){
+	/* If all is well, the scheduler will now be running, and the following
+		line will never be reached.  If the following line does execute, then
+		there was insufficient FreeRTOS heap memory available for the idle and/or
+		timer tasks	to be created.  See the memory management section on the
+		FreeRTOS web site for more details. */
+		for( ;; );
 
-		rlen = ETH_ReceivePacket(testBuffer, 514);
-//		usartSend(0xC0);
-
-		if (rlen != 0){
-			usartSend(0xC1); //Packet received
-			usartSend(rlen);
-//			for (i=0; i <rlen; i++){
-//					usartSend(testBuffer[i]);
-//			}
-			testBuffer[0]=0xE8;
-			testBuffer[1]=0x03;
-			testBuffer[2]=0x9A;
-			testBuffer[3]=0xAE;
-			testBuffer[4]=0x00;
-			testBuffer[5]=0x9C;
-
-			testBuffer[6]=0x00;
-			testBuffer[7]=0xAA;
-			testBuffer[8]=0xBB;
-			testBuffer[9]=0xCC;
-			testBuffer[10]=0xDE;
-			testBuffer[11]=0x02;
-			ETH_send_packet(testBuffer, rlen);
-		}
-
-//		for (i=0; i<1000000; ++i);
-//		GPIO_WriteBit(GPIOB, GPIO_Pin_10, led_state ? Bit_SET : Bit_RESET);
-//		led_state = !led_state;
-//		GPIO_WriteBit(GPIOB, GPIO_Pin_11, led_state ? Bit_SET : Bit_RESET);
-		}
+//    while(1){
+//
+//		rlen = ETH_ReceivePacket(testBuffer, 514);
+////		usartSend(0xC0);
+//
+//		if (rlen != 0){
+//			usartSend(0xC1); //Packet received
+//			usartSend(rlen);
+////			for (i=0; i <rlen; i++){
+////					usartSend(testBuffer[i]);
+////			}
+//			testBuffer[0]=0xE8;
+//			testBuffer[1]=0x03;
+//			testBuffer[2]=0x9A;
+//			testBuffer[3]=0xAE;
+//			testBuffer[4]=0x00;
+//			testBuffer[5]=0x9C;
+//
+//			testBuffer[6]=0x00;
+//			testBuffer[7]=0xAA;
+//			testBuffer[8]=0xBB;
+//			testBuffer[9]=0xCC;
+//			testBuffer[10]=0xDE;
+//			testBuffer[11]=0x02;
+//			ETH_send_packet(testBuffer, rlen);
+//		}
+//
+////		for (i=0; i<1000000; ++i);
+////		GPIO_WriteBit(GPIOB, GPIO_Pin_10, led_state ? Bit_SET : Bit_RESET);
+////		led_state = !led_state;
+////		GPIO_WriteBit(GPIOB, GPIO_Pin_11, led_state ? Bit_SET : Bit_RESET);
+//		}
 }
+
 
 void vApplicationMallocFailedHook( void )
 {

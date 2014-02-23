@@ -90,21 +90,21 @@
     <File name="stm_lib/inc/stm32f0xx_spi.h" path="stm_lib/inc/stm32f0xx_spi.h" type="1"/>
     <File name="cmsis_boot/stm32f0xx.h" path="cmsis_boot/stm32f0xx.h" type="1"/>
     <File name="FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" type="1"/>
-    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_usart.h" path="stm_lib/inc/stm32f0xx_usart.h" type="1"/>
+    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
     <File name="FreeRTOS/Source/include/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
     <File name="usart_jose/usart_jose.c" path="usart_jose/usart_jose.c" type="1"/>
     <File name="stm_lib/src/stm32f0xx_spi.c" path="stm_lib/src/stm32f0xx_spi.c" type="1"/>
-    <File name="FreeRTOS/Source/portable/GCC" path="" type="2"/>
     <File name="FreeRTOS/Source/portable" path="" type="2"/>
-    <File name="FreeRTOS/Source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
+    <File name="FreeRTOS/Source/portable/GCC" path="" type="2"/>
     <File name="FreeRTOS/Source/portable/MemMang/heap_4.c" path="FreeRTOS/Source/portable/MemMang/heap_4.c" type="1"/>
+    <File name="FreeRTOS/Source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
     <File name="enc28j60_jose" path="" type="2"/>
     <File name="FreeRTOS/Source/list.c" path="FreeRTOS/Source/list.c" type="1"/>
     <File name="enc28j60_jose/stm32f0_spi_jose.c" path="enc28j60_jose/stm32f0_spi_jose.c" type="1"/>
     <File name="FreeRTOS/Source/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
-    <File name="FreeRTOS/Source/include" path="" type="2"/>
     <File name="FreeRTOS/Source" path="" type="2"/>
+    <File name="FreeRTOS/Source/include" path="" type="2"/>
     <File name="cmsis_core/core_cm0.c" path="cmsis_core/core_cm0.c" type="1"/>
     <File name="FreeRTOS/Source/include/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
     <File name="cmsis_boot/stm32f0xx_conf.h" path="cmsis_boot/stm32f0xx_conf.h" type="1"/>
@@ -115,8 +115,8 @@
     <File name="FreeRTOS/Source/include/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
     <File name="enc28j60_jose/stm32f0_spi_jose.h" path="enc28j60_jose/stm32f0_spi_jose.h" type="1"/>
     <File name="FreeRTOS/Source/include/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
-    <File name="enc28j60_jose/enc28j60.h" path="enc28j60_jose/enc28j60.h" type="1"/>
     <File name="FreeRTOS/Source/include/stdint.readme" path="FreeRTOS/Source/include/stdint.readme" type="1"/>
+    <File name="enc28j60_jose/enc28j60_jose.h" path="enc28j60_jose/enc28j60_jose.h" type="1"/>
     <File name="FreeRTOS/Source/include/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
     <File name="FreeRTOS/License" path="" type="2"/>
     <File name="stm_lib/src" path="" type="2"/>
@@ -134,6 +134,7 @@
     <File name="FreeRTOS/Source/portable/MemMang" path="" type="2"/>
     <File name="FreeRTOS" path="" type="2"/>
     <File name="stm_lib/inc" path="" type="2"/>
+    <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
     <File name="FreeRTOS/Source/include/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
     <File name="FreeRTOS/License/license.txt" path="FreeRTOS/License/license.txt" type="1"/>
     <File name="stm_lib/src/stm32f0xx_gpio.c" path="stm_lib/src/stm32f0xx_gpio.c" type="1"/>

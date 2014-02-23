@@ -1,6 +1,3 @@
-//Jose: These includes are to solve compilation errors after copying FreeRTOS source files
-#include "system_stm32f0xx.h"
-
 /*
     FreeRTOS V8.0.0 - Copyright (C) 2014 Real Time Engineers Ltd.
     All rights reserved

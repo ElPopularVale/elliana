@@ -9,60 +9,17 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/elliana/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1484" selectionTopPixel="714"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60.h" partName="enc28j60.h" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60.h" title="enc28j60.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/enc28j60.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.c" partName="enc28j60_jose.c" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.c" title="enc28j60_jose.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="166" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.c" partName="stm32f0_spi_jose.c" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/stm32f0_spi_jose.c" title="stm32f0_spi_jose.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/stm32f0_spi_jose.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6129" selectionTopPixel="2604"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" partName="port.c" path="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" title="port.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="90" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.h" partName="system_stm32f0xx.h" path="C:/CooCox/CoIDE/workspace/elliana/cmsis_boot/system_stm32f0xx.h" title="system_stm32f0xx.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/cmsis_boot/system_stm32f0xx.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="90" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" partName="tasks.c" path="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/tasks.c" title="tasks.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/FreeRTOS/Source/tasks.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/FreeRTOS/Source/tasks.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="26">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/elliana"/>
-<element path="/elliana/enc28j60_jose"/>
-<element path="/elliana/FreeRTOS"/>
-<element path="/elliana/FreeRTOS/Source"/>
-<element path="/elliana/FreeRTOS/Source/include"/>
 </expanded>
-<selection>
-<element path="/elliana/main.c"/>
-</selection>
 </viewState>
 </view>
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
@@ -75,7 +32,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.coocox.builder.ui.views.ProjectView" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -126,7 +83,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f756" ratio="0.7" ratioLeft="441" ratioRight="189" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f756" ratio="0.72567785" ratioLeft="455" ratioRight="172" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -161,193 +118,48 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/FreeRTOS/Source/tasks.c"/>
-</editors>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="6129" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1777" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1312" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="3">
-<position info="not_deleted" x="6129" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="2">
-<position info="not_deleted" x="1777" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="1">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1312" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1716" y="0"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="13488" y="80"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="259" y="0"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="13379" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4578" y="0"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="13488" y="80"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="13634" y="0"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="13488" y="80"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="92" y="29"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="1686" y="87"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4578" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="6">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="7">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="6">
-<position info="not_deleted" x="236" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4578" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="7">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="6">
-<position info="not_deleted" x="0" y="19"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="1686" y="87"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="90" y="0"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="1693" y="8"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4578" y="0"/>
-</item>
-<item historyLabel="stm32f0_spi_jose.c" index="8">
-<position info="not_deleted" x="6129" y="0"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="7">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="6">
-<position info="not_deleted" x="0" y="19"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="1693" y="8"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="90" y="0"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="1686" y="87"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="123" y="0"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="111" y="0"/>
-</item>
-<item historyLabel="tasks.c" index="9">
-<position info="not_deleted" x="68140" y="0"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="111" y="0"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="0" y="90"/>
-</item>
-<item historyLabel="tasks.c" index="9">
-<position info="not_deleted" x="68140" y="0"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="90" y="0"/>
-</item>
-<item historyLabel="tasks.c" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="enc28j60.h" index="6">
-<position info="not_deleted" x="0" y="19"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4167" y="0"/>
-</item>
-<item historyLabel="tasks.c" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="system_stm32f0xx.h" index="5">
-<position info="not_deleted" x="90" y="0"/>
-</item>
-<item historyLabel="port.c" index="4">
-<position info="not_deleted" x="0" y="90"/>
-</item>
-<item historyLabel="enc28j60_jose.c" index="7">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="4167" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" tooltip="elliana/FreeRTOS/Source/tasks.c">
-<persistable path="/elliana/FreeRTOS/Source/tasks.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.h" tooltip="elliana/cmsis_boot/system_stm32f0xx.h">
-<persistable path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c">
-<persistable path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.c" tooltip="elliana/enc28j60_jose/stm32f0_spi_jose.c">
 <persistable path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.h" tooltip="elliana/enc28j60_jose/enc28j60_jose.h">
+<persistable path="/elliana/enc28j60_jose/enc28j60_jose.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.c" tooltip="elliana/enc28j60_jose/enc28j60_jose.c">
 <persistable path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60.h" tooltip="elliana/enc28j60_jose/enc28j60.h">
 <persistable path="/elliana/enc28j60_jose/enc28j60.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="portmacro.h" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h">
+<persistable path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOSConfig.h" tooltip="elliana/FreeRTOSConfig.h">
+<persistable path="/elliana/FreeRTOSConfig.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c">
+<persistable path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.c" tooltip="elliana/cmsis_boot/system_stm32f0xx.c">
+<persistable path="/elliana/cmsis_boot/system_stm32f0xx.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="task.h" tooltip="elliana/FreeRTOS/Source/include/task.h">
+<persistable path="/elliana/FreeRTOS/Source/include/task.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOSConfig.h" tooltip="C:\CooCox\CoIDE\workspace\elliana\FreeRTOSConfig.h">
+<persistable path="C:\CooCox\CoIDE\workspace\elliana\FreeRTOSConfig.h" project="elliana"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" tooltip="elliana/FreeRTOS/Source/tasks.c">
+<persistable path="/elliana/FreeRTOS/Source/tasks.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.h" tooltip="elliana/cmsis_boot/system_stm32f0xx.h">
+<persistable path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_usart.c" tooltip="elli_spi/stm_lib/src/stm32f0xx_usart.c">
 <persistable path="/elli_spi/stm_lib/src/stm32f0xx_usart.c"/>
@@ -357,24 +169,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usart_jose.h" tooltip="elli_spi/usart_jose/usart_jose.h">
 <persistable path="/elli_spi/usart_jose/usart_jose.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="elli_usart_test/uart/uart.c">
-<persistable path="/elli_usart_test/uart/uart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Printf.c" tooltip="elli_usart_test/example/Printf.c">
-<persistable path="/elli_usart_test/example/Printf.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.c" tooltip="elli_usart_test/stm_lib/src/stm32f0xx_gpio.c">
-<persistable path="/elli_usart_test/stm_lib/src/stm32f0xx_gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" tooltip="elli_usart_test/stdio/printf.c">
-<persistable path="/elli_usart_test/stdio/printf.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_rcc.c" tooltip="elli_usart_test/stm_lib/src/stm32f0xx_rcc.c">
-<persistable path="/elli_usart_test/stm_lib/src/stm32f0xx_rcc.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_rcc.h" tooltip="elli_usart_test/stm_lib/inc/stm32f0xx_rcc.h">
-<persistable path="/elli_usart_test/stm_lib/inc/stm32f0xx_rcc.h"/>
 </file>
 </mruList>
 </workbench>

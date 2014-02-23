@@ -1,6 +1,5 @@
 #include "stm32f0_spi_jose.h"
-#include "enc28j60.h"
-#include "usart_jose.h"
+#include "enc28j60_jose.h"
 
 //Last bank selected
 uint8_t last_bank = 0;
