@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\FreeRTOS\Source\include /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\FreeRTOS\Source /I..\..\..\workspace\elliana\FreeRTOS /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 /I..\..\..\workspace /I..\..\..\workspace\elliana\usart_jose /I..\..\.. /I..\..\..\workspace\elliana\stm_lib /I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
+   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\FreeRTOS\Source\include /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\FreeRTOS\Source /I..\..\..\workspace\elliana\FreeRTOS /I..\..\..\workspace\elliana\udpstack /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 /I..\..\..\workspace\elliana\usart_jose /I..\..\..\workspace /I..\..\.. /I..\..\..\workspace\elliana\stm_lib /I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
       <source file="..\..\..\FreeRTOS\Source\event_groups.c" lastModified="1444534e97c">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\event_groups.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="1445f746f68">
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="14489bae0bd">
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\croutine.h" lastModified="1444534e594">
          <include file="..\..\..\FreeRTOS\Source\include\list.h"/>
@@ -18,7 +18,7 @@
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
       </source>
-      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h" lastModified="1445f8bcdd1">
+      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h" lastModified="14489bae4f2">
       </source>
       <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="1444a3d9e50">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
@@ -34,10 +34,14 @@
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\croutine.h"/>
       </source>
-      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h" lastModified="1429a6276da">
+      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h" lastModified="14489be1bfb">
          <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="14489be1b9d">
+         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
+         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\event_groups.h" lastModified="1444534e594">
          <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
@@ -46,7 +50,7 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c" lastModified="1444534e611">
+      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c" lastModified="14489bae4c3">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
       </source>
@@ -64,14 +68,18 @@
       <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="144562254b1">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
       </source>
-      <source file="..\..\..\enc28j60_jose\enc28j60_jose.h" lastModified="1445fa29c36">
+      <source file="..\..\..\enc28j60_jose\enc28j60_jose.h" lastModified="14489be1f47">
       </source>
       <source file="..\..\..\usart_jose\usart_jose.c" lastModified="1443770635d">
          <include file="..\..\..\usart_jose\usart_jose.h"/>
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\StackMacros.h" lastModified="1444534e5c3">
       </source>
-      <source file="..\..\..\FreeRTOSConfig.h" lastModified="1445f906dbf">
+      <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="1448e1ef1a0">
+         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
+         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOSConfig.h" lastModified="14489be2419">
       </source>
       <source file="..\..\..\cmsis_boot\stm32f0xx.h" lastModified="144562258c1">
          <include file="..\..\..\cmsis_core\core_cm0.h"/>
@@ -86,13 +94,14 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\main.c" lastModified="1445fa8b5b3">
+      <source file="..\..\..\main.c" lastModified="14556bb34a6">
          <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
          <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
          <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
          <include file="..\..\..\usart_jose\usart_jose.h"/>
+         <include file="..\..\..\udpstack\ipstack.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
          <include file="..\..\..\FreeRTOSConfig.h"/>
@@ -117,6 +126,14 @@
          <include file="..\..\..\FreeRTOS\Source\include\projdefs.h"/>
          <include file="..\..\..\FreeRTOSConfig.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\portable.h"/>
+      </source>
+      <source file="..\..\..\udpstack\ipstack.h" lastModified="14556887cbd">
+         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
+         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
+      </source>
+      <source file="..\..\..\udpstack\ipstack.c" lastModified="14556b947e9">
+         <include file="..\..\..\udpstack\ipstack.h"/>
+         <include file="..\..\..\usart_jose\usart_jose.h"/>
       </source>
       <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="14449969ec1">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>

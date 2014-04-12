@@ -9,30 +9,70 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/elliana/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3233" selectionTopPixel="1644"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.c" partName="enc28j60_jose.c" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.c" title="enc28j60_jose.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1147" selectionTopPixel="90"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.h" partName="enc28j60_jose.h" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.h" title="enc28j60_jose.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/enc28j60_jose.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/enc28j60_jose.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="4736" selectionTopPixel="90"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usart_jose.c" partName="usart_jose.c" path="C:/CooCox/CoIDE/workspace/elliana/usart_jose/usart_jose.c" title="usart_jose.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/usart_jose/usart_jose.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/usart_jose/usart_jose.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1284" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ipstack.c" partName="ipstack.c" path="C:/CooCox/CoIDE/workspace/elliana/udpstack/ipstack.c" title="ipstack.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/udpstack/ipstack.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/udpstack/ipstack.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6706" selectionTopPixel="4959"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ipstack.h" partName="ipstack.h" path="C:/CooCox/CoIDE/workspace/elliana/udpstack/ipstack.h" title="ipstack.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/udpstack/ipstack.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/udpstack/ipstack.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="2004" selectionTopPixel="1305"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.h" partName="stm32f0_spi_jose.h" path="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/stm32f0_spi_jose.h" title="stm32f0_spi_jose.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/enc28j60_jose/stm32f0_spi_jose.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/enc28j60_jose/stm32f0_spi_jose.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="416"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="string.h" partName="string.h" title="string.h" tooltip="c:\program files (x86)\gnu tools arm embedded\4.7 2013q2\arm-none-eabi\include\string.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/c:/program%20files%20(x86)/gnu%20tools%20arm%20embedded/4.7%202013q2/arm-none-eabi/include/string.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="39" selectionOffset="813" selectionTopPixel="375"/>
+</editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/elliana"/>
+<element path="/elliana/enc28j60_jose"/>
+<element path="/elliana/udpstack"/>
 </expanded>
 </viewState>
-</view>
-<view id="org.coocox.component.ui.ComponentView" partName="Components">
-<viewState/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="org.coocox.component.ui.Help" partName="Help">
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.coocox.builder.ui.views.ProjectView" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -62,19 +102,16 @@
 <hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<view id="org.coocox.component.ui.ComponentView"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
-<view id="org.coocox.component.ui.Help"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1ccc22d">
-<folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.ComponentView" label="Components"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
@@ -93,10 +130,10 @@
 </info>
 <info part="org.coocox.builder.ui.exampleView" ratio="0.21944036" ratioLeft="298" ratioRight="1060" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ccc22d"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@15773de" ratio="0.7198113" ratioLeft="763" ratioRight="297" relationship="2" relative="org.coocox.builder.ui.exampleView">
-<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.Help" label="Help"/>
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -118,15 +155,185 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/udpstack/ipstack.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/udpstack/ipstack.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60_jose.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
+</editors>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="6747" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="7905" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1055" y="17"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="7712" y="9"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="8596" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="6746" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1274" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="123" y="15"/>
+</item>
+<item historyLabel="enc28j60_jose.h" index="3">
+<position info="not_deleted" x="4736" y="15"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="6746" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="7712" y="9"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="8594" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="7681" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="123" y="15"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3681" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="15400" y="11"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3681" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3681" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="15400" y="11"/>
+</item>
+<item historyLabel="ipstack.h" index="2">
+<position info="not_deleted" x="2004" y="7"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3648" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="15400" y="11"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="15457" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="7712" y="9"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="8594" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="7859" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1136" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="15450" y="20"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1136" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1843" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.h" index="3">
+<position info="not_deleted" x="4736" y="15"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="15450" y="20"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1769" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="8660" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1769" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1868" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="6706" y="0"/>
+</item>
+<item historyLabel="enc28j60_jose.c" index="4">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1868" y="0"/>
+</item>
+<item historyLabel="ipstack.c" index="1">
+<position info="not_deleted" x="6706" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="1868" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.c" tooltip="elliana/enc28j60_jose/stm32f0_spi_jose.c">
-<persistable path="/elliana/enc28j60_jose/stm32f0_spi_jose.c"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="string.h" tooltip="c:\program files (x86)\gnu tools arm embedded\4.7 2013q2\arm-none-eabi\include\string.h">
+<persistable uri="file:/c:/program%20files%20(x86)/gnu%20tools%20arm%20embedded/4.7%202013q2/arm-none-eabi/include/string.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0_spi_jose.h" tooltip="elliana/enc28j60_jose/stm32f0_spi_jose.h">
+<persistable path="/elliana/enc28j60_jose/stm32f0_spi_jose.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ipstack.h" tooltip="elliana/udpstack/ipstack.h">
+<persistable path="/elliana/udpstack/ipstack.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ipstack.c" tooltip="elliana/udpstack/ipstack.c">
+<persistable path="/elliana/udpstack/ipstack.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usart_jose.c" tooltip="elliana/usart_jose/usart_jose.c">
+<persistable path="/elliana/usart_jose/usart_jose.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.h" tooltip="elliana/enc28j60_jose/enc28j60_jose.h">
 <persistable path="/elliana/enc28j60_jose/enc28j60_jose.h"/>
@@ -134,41 +341,29 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60_jose.c" tooltip="elliana/enc28j60_jose/enc28j60_jose.c">
 <persistable path="/elliana/enc28j60_jose/enc28j60_jose.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60.h" tooltip="elliana/enc28j60_jose/enc28j60.h">
-<persistable path="/elliana/enc28j60_jose/enc28j60.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="udpstack.h" tooltip="elliana/udpstack/udpstack.h">
+<persistable path="/elliana/udpstack/udpstack.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="portmacro.h" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h">
-<persistable path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="udpstack.c" tooltip="elliana/udpstack/udpstack.c">
+<persistable path="/elliana/udpstack/udpstack.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOSConfig.h" tooltip="elliana/FreeRTOSConfig.h">
-<persistable path="/elliana/FreeRTOSConfig.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="elliana/main.c">
+<persistable path="/elliana/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c">
-<persistable path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="efm32gg230f1024.h" tooltip="efm32wifi/EnergyMicro/EFM32GG/efm32gg230f1024.h">
+<persistable path="/efm32wifi/EnergyMicro/EFM32GG/efm32gg230f1024.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.c" tooltip="elliana/cmsis_boot/system_stm32f0xx.c">
-<persistable path="/elliana/cmsis_boot/system_stm32f0xx.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="em_device.h" tooltip="efm32wifi/EnergyMicro/EFM32GG/em_device.h">
+<persistable path="/efm32wifi/EnergyMicro/EFM32GG/em_device.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="task.h" tooltip="elliana/FreeRTOS/Source/include/task.h">
-<persistable path="/elliana/FreeRTOS/Source/include/task.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="efm32.h" tooltip="efm32wifi/EnergyMicro/EFM32GG/efm32.h">
+<persistable path="/efm32wifi/EnergyMicro/EFM32GG/efm32.h"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOSConfig.h" tooltip="C:\CooCox\CoIDE\workspace\elliana\FreeRTOSConfig.h">
-<persistable path="C:\CooCox\CoIDE\workspace\elliana\FreeRTOSConfig.h" project="elliana"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="efm32.h" tooltip="efm32wifi/cmsis_boot/efm32.h">
+<persistable path="/efm32wifi/cmsis_boot/efm32.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" tooltip="elliana/FreeRTOS/Source/tasks.c">
-<persistable path="/elliana/FreeRTOS/Source/tasks.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx.h" tooltip="elliana/cmsis_boot/system_stm32f0xx.h">
-<persistable path="/elliana/cmsis_boot/system_stm32f0xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_usart.c" tooltip="elli_spi/stm_lib/src/stm32f0xx_usart.c">
-<persistable path="/elli_spi/stm_lib/src/stm32f0xx_usart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usart_jose.c" tooltip="elli_spi/usart_jose/usart_jose.c">
-<persistable path="/elli_spi/usart_jose/usart_jose.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usart_jose.h" tooltip="elli_spi/usart_jose/usart_jose.h">
-<persistable path="/elli_spi/usart_jose/usart_jose.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="em_gpio.c" tooltip="efm32wifi/EnergyMicro/emlib/src/em_gpio.c">
+<persistable path="/efm32wifi/EnergyMicro/emlib/src/em_gpio.c"/>
 </file>
 </mruList>
 </workbench>
