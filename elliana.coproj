@@ -77,11 +77,10 @@
   <Files>
     <File name="FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" path="FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" type="1"/>
     <File name="FreeRTOS/Source/queue.c" path="FreeRTOS/Source/queue.c" type="1"/>
-    <File name="udpstack/ipstack.c" path="udpstack/ipstack.c" type="1"/>
     <File name="FreeRTOS/Source/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
     <File name="FreeRTOS/Source/include/croutine.h" path="FreeRTOS/Source/include/croutine.h" type="1"/>
-    <File name="cmsis_boot" path="" type="2"/>
     <File name="stm_lib/inc/stm32f0xx_gpio.h" path="stm_lib/inc/stm32f0xx_gpio.h" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
     <File name="FreeRTOS/Source/include/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
     <File name="FreeRTOS/Source/include/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
@@ -92,16 +91,15 @@
     <File name="stm_lib/inc/stm32f0xx_spi.h" path="stm_lib/inc/stm32f0xx_spi.h" type="1"/>
     <File name="cmsis_boot/stm32f0xx.h" path="cmsis_boot/stm32f0xx.h" type="1"/>
     <File name="FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" type="1"/>
-    <File name="stm_lib/inc/stm32f0xx_usart.h" path="stm_lib/inc/stm32f0xx_usart.h" type="1"/>
     <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
-    <File name="usart_jose/usart_jose.c" path="usart_jose/usart_jose.c" type="1"/>
+    <File name="stm_lib/inc/stm32f0xx_usart.h" path="stm_lib/inc/stm32f0xx_usart.h" type="1"/>
     <File name="FreeRTOS/Source/include/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
+    <File name="usart_jose/usart_jose.c" path="usart_jose/usart_jose.c" type="1"/>
     <File name="stm_lib/src/stm32f0xx_spi.c" path="stm_lib/src/stm32f0xx_spi.c" type="1"/>
     <File name="FreeRTOS/Source/portable/GCC" path="" type="2"/>
     <File name="FreeRTOS/Source/portable" path="" type="2"/>
     <File name="FreeRTOS/Source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
     <File name="FreeRTOS/Source/portable/MemMang/heap_4.c" path="FreeRTOS/Source/portable/MemMang/heap_4.c" type="1"/>
-    <File name="udpstack/ipstack.h" path="udpstack/ipstack.h" type="1"/>
     <File name="enc28j60_jose" path="" type="2"/>
     <File name="FreeRTOS/Source/list.c" path="FreeRTOS/Source/list.c" type="1"/>
     <File name="FreeRTOS/Source/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
@@ -121,6 +119,7 @@
     <File name="FreeRTOS/Source/include/stdint.readme" path="FreeRTOS/Source/include/stdint.readme" type="1"/>
     <File name="enc28j60_jose/enc28j60_jose.h" path="enc28j60_jose/enc28j60_jose.h" type="1"/>
     <File name="FreeRTOS/Source/include/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
+    <File name="udpstack/udpstack.c" path="udpstack/udpstack.c" type="1"/>
     <File name="FreeRTOS/License" path="" type="2"/>
     <File name="stm_lib/src" path="" type="2"/>
     <File name="FreeRTOS/Demo" path="" type="2"/>
@@ -135,13 +134,14 @@
     <File name="FreeRTOS/Source/event_groups.c" path="FreeRTOS/Source/event_groups.c" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_rcc.h" path="stm_lib/inc/stm32f0xx_rcc.h" type="1"/>
     <File name="FreeRTOS/Source/portable/MemMang" path="" type="2"/>
+    <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
     <File name="FreeRTOS" path="" type="2"/>
-    <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
     <File name="FreeRTOS/Source/include/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
     <File name="FreeRTOS/License/license.txt" path="FreeRTOS/License/license.txt" type="1"/>
-    <File name="main.c" path="main.c" type="1"/>
     <File name="stm_lib/src/stm32f0xx_gpio.c" path="stm_lib/src/stm32f0xx_gpio.c" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="udpstack/udpstack.h" path="udpstack/udpstack.h" type="1"/>
     <File name="enc28j60_jose/enc28j60_jose.c" path="enc28j60_jose/enc28j60_jose.c" type="1"/>
   </Files>
 </Project>

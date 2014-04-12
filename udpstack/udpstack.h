@@ -70,7 +70,10 @@ typedef struct
 
 char GetPacket( int protocol, uint8_t* packet );
 void PingReply(ICMPhdr* ping, uint16_t len);
-static uint16_t chksum(uint16_t sum, uint8_t *data, uint16_t len);
+uint16_t chksum(uint16_t sum, uint8_t *data, uint16_t len);
+void SendArpPacket(uint8_t* targetIP);
+void ReplyArpPacket(ARP* arpPacket);
+uint16_t IPstackInit();
 void printStruct(void *s, uint8_t size);
 
 

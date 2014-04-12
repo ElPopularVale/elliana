@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\FreeRTOS\Source\include /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\FreeRTOS\Source /I..\..\..\workspace\elliana\FreeRTOS /I..\..\..\workspace\elliana\udpstack /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 /I..\..\..\workspace\elliana\usart_jose /I..\..\..\workspace /I..\..\.. /I..\..\..\workspace\elliana\stm_lib /I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
+   <includePath signature="/I..\..\..\workspace\elliana\cmsis_core /I..\..\..\workspace\elliana\enc28j60_jose /I..\..\..\workspace\elliana\FreeRTOS\Source\include /I..\..\..\workspace\elliana\cmsis_boot /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\elliana\stm_lib\inc /I..\..\..\workspace\elliana\FreeRTOS\Source /I..\..\..\workspace\elliana\udpstack /I..\..\..\workspace\elliana\FreeRTOS /I..\..\..\workspace\elliana /I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 /I..\..\..\workspace /I..\..\..\workspace\elliana\usart_jose /I..\..\.. /I..\..\..\workspace\elliana\stm_lib /I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
       <source file="..\..\..\FreeRTOS\Source\event_groups.c" lastModified="1444534e97c">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
@@ -94,18 +94,6 @@
          <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
          <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
       </source>
-      <source file="..\..\..\main.c" lastModified="14556bb34a6">
-         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
-         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
-         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
-         <include file="..\..\..\usart_jose\usart_jose.h"/>
-         <include file="..\..\..\udpstack\ipstack.h"/>
-         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
-         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
-         <include file="..\..\..\FreeRTOSConfig.h"/>
-      </source>
       <source file="..\..\..\FreeRTOS\Source\include\projdefs.h" lastModified="1444534e5a4">
       </source>
       <source file="..\..\..\FreeRTOS\Source\include\task.h" lastModified="1444541bd90">
@@ -127,13 +115,13 @@
          <include file="..\..\..\FreeRTOSConfig.h"/>
          <include file="..\..\..\FreeRTOS\Source\include\portable.h"/>
       </source>
-      <source file="..\..\..\udpstack\ipstack.h" lastModified="14556887cbd">
-         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
-         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
+      <source file="..\..\..\udpstack\udpstack.h" lastModified="14557b7f0a9">
       </source>
-      <source file="..\..\..\udpstack\ipstack.c" lastModified="14556b947e9">
-         <include file="..\..\..\udpstack\ipstack.h"/>
+      <source file="..\..\..\udpstack\udpstack.c" lastModified="14558050220">
+         <include file="..\..\..\udpstack\udpstack.h"/>
+         <include file="..\..\..\enc28j60_jose\enc28j60_jose.h"/>
          <include file="..\..\..\usart_jose\usart_jose.h"/>
+         <include file="..\..\..\enc28j60_jose\stm32f0_spi_jose.h"/>
       </source>
       <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="14449969ec1">
          <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>

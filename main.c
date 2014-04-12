@@ -4,7 +4,7 @@
 #include "stm32f0_spi_jose.h"
 #include "enc28j60_jose.h"
 #include "usart_jose.h"
-#include "ipstack.h"
+#include "udpstack.h"
 
 /* FreeRTOS includes. */
 #include "FreeRTOS.h"
@@ -44,17 +44,18 @@ void task1(void *parameters) {
 	static int i;
 	TickType_t xNextWakeTime;
 	xNextWakeTime = xTaskGetTickCount();
-	const TickType_t xDelay = 1000 / portTICK_PERIOD_MS;
+	const TickType_t xDelay = 10 / portTICK_PERIOD_MS;
 	while (1) {
 
 		GetPacket(0,packet);
-		usartSend(0xC0);
+
+//		usartSend(0xC0);
 //		if (rlen != 0) {
 //			usartSend(0xC1);
 //			for (i=0; i <13; i++){
 //							usartSend(rxBuffer[i]);
 //					}
-		vTaskDelayUntil(&xNextWakeTime, xDelay);
+//		vTaskDelayUntil(&xNextWakeTime, xDelay);
 	}
 //		if (rlen != 0){
 //		usartSend(0xC1);
@@ -71,13 +72,12 @@ void task1(void *parameters) {
 void task2(void *testBuffer) {
 	TickType_t xNextWakeTime;
 	xNextWakeTime = xTaskGetTickCount();
-	const TickType_t xDelay = 1000 / portTICK_PERIOD_MS; //500 ms
+	const TickType_t xDelay = 1500 / portTICK_PERIOD_MS; //500 ms
 	uint8_t target[] = {192,168,0,100};
 	while (1) {
 //		ETH_send_packet(testBuffer, 514);
 //		usartSend(0xC0); //Packet sent
-		SendPing(target);
-		usartSend(0xC1);
+//		usartSend(0xC1);
 		vTaskDelayUntil(&xNextWakeTime, xDelay);
 	}
 
@@ -87,7 +87,9 @@ int main(void) {
 	//local variables
 //	static int i;
 //	uint8_t rlen = 0;
-//	uint8_t macAdress[6] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02 };
+	uint8_t macAdress[6] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02 };
+	uint8_t deviceIP[4] = { 192, 168, 0, 111 };
+	uint8_t routerIP[4] = { 192, 168, 0, 1 };
 //	static uint8_t testBuffer[514] = { 	0xE8, 0x03, 0x9A, 0xAE, 0x00, 0x9C, //Destination address
 //										0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02, //Source address
 //										0x01, 0xF4, //Type length
@@ -98,13 +100,9 @@ int main(void) {
 	ETH_SPI_init();
 	usartInit();
 	IPstackInit();
-
-
 	usartSend(0xC1);
-
-
-
-//	ETH_MAC_init(macAdress);
+//	SendArpPacket(deviceIP);
+//	SendArpPacket( routerIP );
 
 	//Fill buffer with some data
 //	for (i = 0; i < 500; i++) {
@@ -112,30 +110,27 @@ int main(void) {
 //	}
 
 //	Create tasks
-	xTaskCreate(task1, 						/* The function that implements the task. */
-				"Task 1", 					/* The text name assigned to the task - for debug only as it is not used by the kernel. */
-				configMINIMAL_STACK_SIZE, 	/* The size of the stack to allocate to the task. */
-				NULL,						/* The parameter passed to the task - just to check the functionality. */
-				1, 							/* The priority assigned to the task. */
-				NULL);
-	/* The task handle is not required, so NULL is passed. */
-	xTaskCreate(task2, "Task 2", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
-
-	/* Start the tasks and timer running. */
-	vTaskStartScheduler();
-
-	/* If all is well, the scheduler will now be running, and the following
-	 line will never be reached.  If the following line does execute, then
-	 there was insufficient FreeRTOS heap memory available for the idle and/or
-	 timer tasks	to be created.  See the memory management section on the
-	 FreeRTOS web site for more details. */
-	for (;;)
-		;
-
-//    while(1){
-//    	IPstackIdle();
-//    	usartSend(0xC0);
-//    }
+//	xTaskCreate(task1, 						/* The function that implements the task. */
+//				"Task 1", 					/* The text name assigned to the task - for debug only as it is not used by the kernel. */
+//				configMINIMAL_STACK_SIZE, 	/* The size of the stack to allocate to the task. */
+//				NULL,						/* The parameter passed to the task - just to check the functionality. */
+//				1, 							/* The priority assigned to the task. */
+//				NULL);
+//	/* The task handle is not required, so NULL is passed. */
+//	xTaskCreate(task2, "Task 2", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
+//
+//	/* Start the tasks and timer running. */
+//	vTaskStartScheduler();
+//
+//	/* If all is well, the scheduler will now be running, and the following
+//	 line will never be reached.  If the following line does execute, then
+//	 there was insufficient FreeRTOS heap memory available for the idle and/or
+//	 timer tasks	to be created.  See the memory management section on the
+//	 FreeRTOS web site for more details. */
+//	for (;;)
+//		;
+	static uint8_t packet[MAXPACKETLEN];
+	while (1) GetPacket(0,packet);
 //
 //		rlen = ETH_ReceivePacket(testBuffer, 514);
 ////		usartSend(0xC0);
