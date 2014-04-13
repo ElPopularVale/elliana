@@ -1,36 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.7.4 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=elliana.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\elliana -TC:\CooCox\CoIDE\configuration\ProgramData\elliana/arm-gcc-link.ld -g">
-      <target file="elliana.elf" lastModified="1455d276d25">
-         <source file="..\obj\enc28j60_jose.o" lastModified="1455d2665fc"/>
-         <source file="..\obj\heap_4.o" lastModified="1455d26666b"/>
-         <source file="..\obj\usart_jose.o" lastModified="1455d2666be"/>
-         <source file="..\obj\stm32f0xx_rcc.o" lastModified="1455d26674f"/>
-         <source file="..\obj\timer.o" lastModified="1455d26678b"/>
-         <source file="..\obj\stm32f0_spi_jose.o" lastModified="1455d2667fd"/>
-         <source file="..\obj\psock.o" lastModified="1455d2668db"/>
-         <source file="..\obj\main.o" lastModified="1455d276a80"/>
-         <source file="..\obj\startup_stm32f0xx.o" lastModified="1455d26695d"/>
-         <source file="..\obj\timers.o" lastModified="1455d2669e0"/>
-         <source file="..\obj\uiplib.o" lastModified="1455d266a2c"/>
-         <source file="..\obj\uip-split.o" lastModified="1455d266a82"/>
-         <source file="..\obj\uip-fw.o" lastModified="1455d266ae7"/>
-         <source file="..\obj\tasks.o" lastModified="1455d266bb7"/>
-         <source file="..\obj\clock-arch.o" lastModified="1455d266bfa"/>
-         <source file="..\obj\uip_arp.o" lastModified="1455d266c5c"/>
-         <source file="..\obj\stm32f0xx_spi.o" lastModified="1455d266cda"/>
-         <source file="..\obj\uip-neighbor.o" lastModified="1455d266d38"/>
-         <source file="..\obj\stm32f0xx_gpio.o" lastModified="1455d266d9a"/>
-         <source file="..\obj\list.o" lastModified="1455d266def"/>
-         <source file="..\obj\stm32f0xx_usart.o" lastModified="1455d266e7e"/>
-         <source file="..\obj\queue.o" lastModified="1455d266f14"/>
-         <source file="..\obj\port.o" lastModified="1455d266f60"/>
-         <source file="..\obj\system_stm32f0xx.o" lastModified="1455d266fab"/>
-         <source file="..\obj\croutine.o" lastModified="1455d267005"/>
-         <source file="..\obj\event_groups.o" lastModified="1455d267084"/>
-         <source file="..\obj\uip.o" lastModified="1455d26712f"/>
-         <source file="..\obj\hello-world.o" lastModified="1455d267184"/>
-         <source file="..\obj\core_cm0.o" lastModified="1455d2671cc"/>
+      <target file="elliana.elf" lastModified="1455d75d479">
+         <source file="..\obj\enc28j60.o" lastModified="1455d67a19f"/>
+         <source file="..\obj\usart_jose.o" lastModified="1455d4c4245"/>
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="1455d4c42d9"/>
+         <source file="..\obj\timer.o" lastModified="1455d4c4315"/>
+         <source file="..\obj\psock.o" lastModified="1455d4c440e"/>
+         <source file="..\obj\main.o" lastModified="1455d75d1f8"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="1455d4c44cf"/>
+         <source file="..\obj\uiplib.o" lastModified="1455d4c4520"/>
+         <source file="..\obj\uip-split.o" lastModified="1455d4c4577"/>
+         <source file="..\obj\uip-fw.o" lastModified="1455d4c45da"/>
+         <source file="..\obj\clock-arch.o" lastModified="1455d4c4619"/>
+         <source file="..\obj\uip_arp.o" lastModified="1455d4c467f"/>
+         <source file="..\obj\stm32f0xx_spi.o" lastModified="1455d4c46f9"/>
+         <source file="..\obj\uip-neighbor.o" lastModified="1455d4c4751"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="1455d4c47bb"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="1455d4c4860"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="1455d4c48b1"/>
+         <source file="..\obj\uip.o" lastModified="1455d4c495b"/>
+         <source file="..\obj\hello-world.o" lastModified="1455d4c49b0"/>
+         <source file="..\obj\core_cm0.o" lastModified="1455d4c49fc"/>
       </target>
    </processor>
 </history>

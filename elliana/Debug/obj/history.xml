@@ -1,26 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc 4.8.2 x86_64-w64-mingw32 -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\elliana\cmsis_core -I..\..\..\workspace\elliana\enc28j60_jose -I..\..\..\workspace\elliana\FreeRTOS\Source\include -I..\..\..\workspace\elliana\cmsis_boot -I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC -I..\..\..\workspace\elliana\stm_lib\inc -I..\..\..\workspace\elliana\FreeRTOS\Source -I..\..\..\workspace\elliana\uip -I..\..\..\workspace\elliana\FreeRTOS -I..\..\..\workspace\elliana -I..\..\..\workspace\elliana\FreeRTOS\Source\portable\GCC\ARM_CM0 -I..\..\..\workspace\elliana\usart_jose -I..\..\..\workspace -I..\..\.. -I..\..\..\workspace\elliana\stm_lib -I..\..\..\workspace\elliana\FreeRTOS\Source\portable">
-      <target file="timer.o" lastModified="1455d26678b">
-         <source file="..\..\..\uip\timer.c" lastModified="13dab672340"/>
-      </target>
-      <target file="uip.o" lastModified="1455d26712f">
-         <source file="..\..\..\uip\uip.c" lastModified="13dab672340"/>
-      </target>
-      <target file="hello-world.o" lastModified="1455d267184">
-         <source file="..\..\..\hello-world.c" lastModified="13dab672340"/>
-      </target>
-      <target file="clock-arch.o" lastModified="1455d266bfa">
-         <source file="..\..\..\clock-arch.c" lastModified="13dab672340"/>
-      </target>
       <target file="tasks.o" lastModified="1455d266bb7">
          <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="1444a3d8eb0"/>
-      </target>
-      <target file="enc28j60_jose.o" lastModified="1455d2665fc">
-         <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="1455cdb036c"/>
-      </target>
-      <target file="uip-neighbor.o" lastModified="1455d266d38">
-         <source file="..\..\..\uip\uip-neighbor.c" lastModified="13dab672340"/>
       </target>
       <target file="event_groups.o" lastModified="1455d267084">
          <source file="..\..\..\FreeRTOS\Source\event_groups.c" lastModified="1444534e594"/>
@@ -28,17 +10,8 @@
       <target file="croutine.o" lastModified="1455d267005">
          <source file="..\..\..\FreeRTOS\Source\croutine.c" lastModified="1444534e594"/>
       </target>
-      <target file="stm32f0xx_gpio.o" lastModified="1455d266d9a">
-         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="144562254b6"/>
-      </target>
       <target file="queue.o" lastModified="1455d266f14">
          <source file="..\..\..\FreeRTOS\Source\queue.c" lastModified="14449b3bf28"/>
-      </target>
-      <target file="core_cm0.o" lastModified="1455d2671cc">
-         <source file="..\..\..\cmsis_core\core_cm0.c" lastModified="14456225510"/>
-      </target>
-      <target file="stm32f0xx_spi.o" lastModified="1455d266cda">
-         <source file="..\..\..\stm_lib\src\stm32f0xx_spi.c" lastModified="14456225a4e"/>
       </target>
       <target file="heap_4.o" lastModified="1455d26666b">
          <source file="..\..\..\FreeRTOS\Source\portable\MemMang\heap_4.c" lastModified="1444534ee40"/>
@@ -46,47 +19,81 @@
       <target file="list.o" lastModified="1455d266def">
          <source file="..\..\..\FreeRTOS\Source\list.c" lastModified="1444534e5d2"/>
       </target>
-      <target file="psock.o" lastModified="1455d2668db">
-         <source file="..\..\..\uip\psock.c" lastModified="13dab672340"/>
-      </target>
-      <target file="uip_arp.o" lastModified="1455d266c5c">
-         <source file="..\..\..\uip\uip_arp.c" lastModified="13dab672340"/>
-      </target>
-      <target file="usart_jose.o" lastModified="1455d2666be">
-         <source file="..\..\..\usart_jose\usart_jose.c" lastModified="1443770635d"/>
-      </target>
-      <target file="stm32f0xx_rcc.o" lastModified="1455d26674f">
-         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="14456225547"/>
-      </target>
       <target file="port.o" lastModified="1455d266f60">
          <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c" lastModified="14489bae4c3"/>
       </target>
       <target file="timers.o" lastModified="1455d2669e0">
          <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="14449969ad9"/>
       </target>
-      <target file="uiplib.o" lastModified="1455d266a2c">
+   </processor>
+   <processor signature="arm-none-eabi-gcc 4.8.2 x86_64-w64-mingw32 -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\elliana\cmsis_core -I..\..\..\workspace\elliana\enc28j60 -I..\..\..\workspace\elliana\uip -I..\..\..\workspace\elliana -I..\..\..\workspace\elliana\usart_jose -I..\..\..\workspace -I..\..\..\workspace\elliana\cmsis_boot -I..\..\.. -I..\..\..\workspace\elliana\stm_lib\inc -I..\..\..\workspace\elliana\stm_lib">
+      <target file="timer.o" lastModified="1455d4c4315">
+         <source file="..\..\..\uip\timer.c" lastModified="13dab672340"/>
+      </target>
+      <target file="hello-world.o" lastModified="1455d4c49b0">
+         <source file="..\..\..\hello-world.c" lastModified="13dab672340"/>
+      </target>
+      <target file="uip.o" lastModified="1455d4c495b">
+         <source file="..\..\..\uip\uip.c" lastModified="13dab672340"/>
+      </target>
+      <target file="clock-arch.o" lastModified="1455d4c4619">
+         <source file="..\..\..\clock-arch.c" lastModified="13dab672340"/>
+      </target>
+      <target file="uip-neighbor.o" lastModified="1455d4c4751">
+         <source file="..\..\..\uip\uip-neighbor.c" lastModified="13dab672340"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="1455d4c47bb">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="144562254b6"/>
+      </target>
+      <target file="core_cm0.o" lastModified="1455d4c49fc">
+         <source file="..\..\..\cmsis_core\core_cm0.c" lastModified="14456225510"/>
+      </target>
+      <target file="stm32f0xx_spi.o" lastModified="1455d4c46f9">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_spi.c" lastModified="14456225a4e"/>
+      </target>
+      <target file="uip_arp.o" lastModified="1455d4c467f">
+         <source file="..\..\..\uip\uip_arp.c" lastModified="13dab672340"/>
+      </target>
+      <target file="psock.o" lastModified="1455d4c440e">
+         <source file="..\..\..\uip\psock.c" lastModified="13dab672340"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="1455d4c42d9">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="14456225547"/>
+      </target>
+      <target file="usart_jose.o" lastModified="1455d4c4245">
+         <source file="..\..\..\usart_jose\usart_jose.c" lastModified="1443770635d"/>
+      </target>
+      <target file="uiplib.o" lastModified="1455d4c4520">
          <source file="..\..\..\uip\uiplib.c" lastModified="13dab672340"/>
       </target>
-      <target file="uip-split.o" lastModified="1455d266a82">
+      <target file="uip-split.o" lastModified="1455d4c4577">
          <source file="..\..\..\uip\uip-split.c" lastModified="13dab672340"/>
       </target>
-      <target file="startup_stm32f0xx.o" lastModified="1455d26695d">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="144562254c5"/>
-      </target>
-      <target file="stm32f0xx_usart.o" lastModified="1455d266e7e">
+      <target file="stm32f0xx_usart.o" lastModified="1455d4c4860">
          <source file="..\..\..\stm_lib\src\stm32f0xx_usart.c" lastModified="1445622807b"/>
       </target>
-      <target file="system_stm32f0xx.o" lastModified="1455d266fab">
+      <target file="startup_stm32f0xx.o" lastModified="1455d4c44cf">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="144562254c5"/>
+      </target>
+      <target file="system_stm32f0xx.o" lastModified="1455d4c48b1">
          <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="144562254fc"/>
       </target>
-      <target file="stm32f0_spi_jose.o" lastModified="1455d2667fd">
-         <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="1455cdb0371"/>
+      <target file="enc28j60.o" lastModified="1455d67a19f">
+         <source file="..\..\..\enc28j60\enc28j60.c" lastModified="1455d679ea5"/>
       </target>
-      <target file="main.o" lastModified="1455d276a80">
-         <source file="..\..\..\main.c" lastModified="1455d27671d"/>
+      <target file="main.o" lastModified="1455d75d1f8">
+         <source file="..\..\..\main.c" lastModified="1455d75cec5"/>
       </target>
-      <target file="uip-fw.o" lastModified="1455d266ae7">
+      <target file="uip-fw.o" lastModified="1455d4c45da">
          <source file="..\..\..\uip\uip-fw.c" lastModified="13dab672340"/>
+      </target>
+   </processor>
+   <processor signature="arm-none-eabi-gcc 4.8.2 x86_64-w64-mingw32 -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\elliana\cmsis_core -I..\..\..\workspace\elliana\uip -I..\..\..\workspace\elliana -I..\..\..\workspace\elliana\enc28j60_jose -I..\..\..\workspace\elliana\usart_jose -I..\..\..\workspace -I..\..\..\workspace\elliana\cmsis_boot -I..\..\.. -I..\..\..\workspace\elliana\stm_lib\inc -I..\..\..\workspace\elliana\stm_lib">
+      <target file="enc28j60_jose.o" lastModified="1455d423451">
+         <source file="..\..\..\enc28j60_jose\enc28j60_jose.c" lastModified="1455cdb036c"/>
+      </target>
+      <target file="stm32f0_spi_jose.o" lastModified="1455d4235d7">
+         <source file="..\..\..\enc28j60_jose\stm32f0_spi_jose.c" lastModified="1455cdb0371"/>
       </target>
    </processor>
 </history>
