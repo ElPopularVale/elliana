@@ -76,72 +76,99 @@
   </Components>
   <Files>
     <File name="FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" path="FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" type="1"/>
+    <File name="uip/uiplib.h" path="uip/uiplib.h" type="1"/>
     <File name="FreeRTOS/Source/queue.c" path="FreeRTOS/Source/queue.c" type="1"/>
+    <File name="uip/psock.c" path="uip/psock.c" type="1"/>
     <File name="FreeRTOS/Source/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
     <File name="FreeRTOS/Source/include/croutine.h" path="FreeRTOS/Source/include/croutine.h" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_gpio.h" path="stm_lib/inc/stm32f0xx_gpio.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="FreeRTOS/Source/include/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
+    <File name="uip/uip-fw.c" path="uip/uip-fw.c" type="1"/>
+    <File name="uip/lc-addrlabels.h" path="uip/lc-addrlabels.h" type="1"/>
     <File name="FreeRTOS/Source/include/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
+    <File name="uip/uipopt.h" path="uip/uipopt.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="FreeRTOS/Source/portable/GCC/ARM_CM0" path="" type="2"/>
+    <File name="hello-world.h" path="hello-world.h" type="1"/>
     <File name="cmsis_core" path="" type="2"/>
-    <File name="udpstack" path="" type="2"/>
+    <File name="uip/uip-split.c" path="uip/uip-split.c" type="1"/>
     <File name="usart_jose" path="" type="2"/>
     <File name="stm_lib/inc/stm32f0xx_spi.h" path="stm_lib/inc/stm32f0xx_spi.h" type="1"/>
     <File name="cmsis_boot/stm32f0xx.h" path="cmsis_boot/stm32f0xx.h" type="1"/>
+    <File name="uip/pt.h" path="uip/pt.h" type="1"/>
+    <File name="uip/uip-neighbor.c" path="uip/uip-neighbor.c" type="1"/>
     <File name="FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" type="1"/>
-    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_usart.h" path="stm_lib/inc/stm32f0xx_usart.h" type="1"/>
+    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
     <File name="FreeRTOS/Source/include/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
     <File name="usart_jose/usart_jose.c" path="usart_jose/usart_jose.c" type="1"/>
     <File name="stm_lib/src/stm32f0xx_spi.c" path="stm_lib/src/stm32f0xx_spi.c" type="1"/>
-    <File name="FreeRTOS/Source/portable/GCC" path="" type="2"/>
     <File name="FreeRTOS/Source/portable" path="" type="2"/>
-    <File name="FreeRTOS/Source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
+    <File name="FreeRTOS/Source/portable/GCC" path="" type="2"/>
     <File name="FreeRTOS/Source/portable/MemMang/heap_4.c" path="FreeRTOS/Source/portable/MemMang/heap_4.c" type="1"/>
+    <File name="FreeRTOS/Source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
+    <File name="hello-world.c" path="hello-world.c" type="1"/>
+    <File name="clock-arch.h" path="clock-arch.h" type="1"/>
     <File name="enc28j60_jose" path="" type="2"/>
     <File name="FreeRTOS/Source/list.c" path="FreeRTOS/Source/list.c" type="1"/>
-    <File name="FreeRTOS/Source/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
+    <File name="uip/timer.c" path="uip/timer.c" type="1"/>
     <File name="enc28j60_jose/stm32f0_spi_jose.c" path="enc28j60_jose/stm32f0_spi_jose.c" type="1"/>
+    <File name="FreeRTOS/Source/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
+    <File name="uip/uip_arp.h" path="uip/uip_arp.h" type="1"/>
+    <File name="uip/uip.h" path="uip/uip.h" type="1"/>
     <File name="FreeRTOS/Source/include" path="" type="2"/>
     <File name="FreeRTOS/Source" path="" type="2"/>
     <File name="cmsis_core/core_cm0.c" path="cmsis_core/core_cm0.c" type="1"/>
+    <File name="uip/lc-switch.h" path="uip/lc-switch.h" type="1"/>
     <File name="FreeRTOS/Source/include/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
-    <File name="cmsis_boot/startup/startup_stm32f0xx.s" path="cmsis_boot/startup/startup_stm32f0xx.s" type="1"/>
+    <File name="uip/uip_arch.h" path="uip/uip_arch.h" type="1"/>
+    <File name="uip-conf.h" path="uip-conf.h" type="1"/>
     <File name="cmsis_boot/stm32f0xx_conf.h" path="cmsis_boot/stm32f0xx_conf.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f0xx.s" path="cmsis_boot/startup/startup_stm32f0xx.s" type="1"/>
+    <File name="uip/uip-split.h" path="uip/uip-split.h" type="1"/>
     <File name="cmsis_boot/system_stm32f0xx.c" path="cmsis_boot/system_stm32f0xx.c" type="1"/>
     <File name="usart_jose/usart_jose.h" path="usart_jose/usart_jose.h" type="1"/>
     <File name="stm_lib/src/stm32f0xx_rcc.c" path="stm_lib/src/stm32f0xx_rcc.c" type="1"/>
     <File name="FreeRTOS/Source/include/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
     <File name="enc28j60_jose/stm32f0_spi_jose.h" path="enc28j60_jose/stm32f0_spi_jose.h" type="1"/>
     <File name="FreeRTOS/Source/include/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
+    <File name="uip/uip-neighbor.h" path="uip/uip-neighbor.h" type="1"/>
     <File name="FreeRTOS/Source/include/stdint.readme" path="FreeRTOS/Source/include/stdint.readme" type="1"/>
+    <File name="uip/lc.h" path="uip/lc.h" type="1"/>
     <File name="enc28j60_jose/enc28j60_jose.h" path="enc28j60_jose/enc28j60_jose.h" type="1"/>
     <File name="FreeRTOS/Source/include/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
-    <File name="udpstack/udpstack.c" path="udpstack/udpstack.c" type="1"/>
+    <File name="uip/uip_arp.c" path="uip/uip_arp.c" type="1"/>
+    <File name="uip/uip.c" path="uip/uip.c" type="1"/>
+    <File name="uip/uiplib.c" path="uip/uiplib.c" type="1"/>
     <File name="FreeRTOS/License" path="" type="2"/>
     <File name="stm_lib/src" path="" type="2"/>
+    <File name="uip/timer.h" path="uip/timer.h" type="1"/>
     <File name="FreeRTOS/Demo" path="" type="2"/>
+    <File name="uip" path="" type="2"/>
     <File name="FreeRTOS/readme.txt" path="FreeRTOS/readme.txt" type="1"/>
     <File name="stm_lib" path="" type="2"/>
+    <File name="uip/Makefile.include" path="uip/Makefile.include" type="1"/>
     <File name="FreeRTOS/Source/readme.txt" path="FreeRTOS/Source/readme.txt" type="1"/>
+    <File name="uip/uip-fw.h" path="uip/uip-fw.h" type="1"/>
+    <File name="clock-arch.c" path="clock-arch.c" type="1"/>
     <File name="FreeRTOS/Source/include/FreeRTOS.h" path="FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
     <File name="FreeRTOS/Source/include/event_groups.h" path="FreeRTOS/Source/include/event_groups.h" type="1"/>
+    <File name="uip/clock.h" path="uip/clock.h" type="1"/>
     <File name="FreeRTOS/Source/include/StackMacros.h" path="FreeRTOS/Source/include/StackMacros.h" type="1"/>
     <File name="cmsis_boot/system_stm32f0xx.h" path="cmsis_boot/system_stm32f0xx.h" type="1"/>
+    <File name="uip/psock.h" path="uip/psock.h" type="1"/>
     <File name="stm_lib/src/stm32f0xx_usart.c" path="stm_lib/src/stm32f0xx_usart.c" type="1"/>
     <File name="FreeRTOS/Source/event_groups.c" path="FreeRTOS/Source/event_groups.c" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_rcc.h" path="stm_lib/inc/stm32f0xx_rcc.h" type="1"/>
     <File name="FreeRTOS/Source/portable/MemMang" path="" type="2"/>
     <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
-    <File name="stm_lib/inc" path="" type="2"/>
     <File name="FreeRTOS" path="" type="2"/>
+    <File name="stm_lib/inc" path="" type="2"/>
     <File name="FreeRTOS/Source/include/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
     <File name="FreeRTOS/License/license.txt" path="FreeRTOS/License/license.txt" type="1"/>
     <File name="stm_lib/src/stm32f0xx_gpio.c" path="stm_lib/src/stm32f0xx_gpio.c" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
-    <File name="udpstack/udpstack.h" path="udpstack/udpstack.h" type="1"/>
     <File name="enc28j60_jose/enc28j60_jose.c" path="enc28j60_jose/enc28j60_jose.c" type="1"/>
   </Files>
 </Project>

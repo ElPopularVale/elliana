@@ -1,5 +1,8 @@
 #include "stdint.h" //Why is asking for this?
 
+//Maximum packet length
+#define MAXPACKETLEN 500
+
 /* ENC28J60 Memory locations */
 #define HIGH_BYTE(X)  (uint8_t)((X) >> 8)
 #define LOW_BYTE(X)   (uint8_t)(X & 0xFF)

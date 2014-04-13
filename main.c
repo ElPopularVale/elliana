@@ -4,15 +4,16 @@
 #include "stm32f0_spi_jose.h"
 #include "enc28j60_jose.h"
 #include "usart_jose.h"
-#include "udpstack.h"
+#include "uip.h"
+#include "uip_arp.h"
+#include "hello-world.h"
 
 /* FreeRTOS includes. */
 #include "FreeRTOS.h"
 #include "task.h"
 #include "FreeRTOSConfig.h"
 
-//Global variables
-static int led_state = 0;
+#define BUF ((struct uip_eth_hdr * )&uip_buf[0])
 
 //FreeRTOS tasks
 static void task1(void *testBuffer);
@@ -40,32 +41,13 @@ void LED_init() {
 //Task 1: Toggle LEDs
 void task1(void *parameters) {
 	static uint8_t packet[MAXPACKETLEN];
-	uint8_t rlen = 0;
-	static int i;
 	TickType_t xNextWakeTime;
 	xNextWakeTime = xTaskGetTickCount();
 	const TickType_t xDelay = 10 / portTICK_PERIOD_MS;
 	while (1) {
 
-		GetPacket(0,packet);
-
-//		usartSend(0xC0);
-//		if (rlen != 0) {
-//			usartSend(0xC1);
-//			for (i=0; i <13; i++){
-//							usartSend(rxBuffer[i]);
-//					}
-//		vTaskDelayUntil(&xNextWakeTime, xDelay);
+		vTaskDelayUntil(&xNextWakeTime, xDelay);
 	}
-//		if (rlen != 0){
-//		usartSend(0xC1);
-//		for (i=0; i <rlen; i++){
-//				usartSend(rxBuffer[i]);
-//		}
-////		usartSend(rlen);
-////		usartSend(ETH_ReadETHControlRegister(EPKTCNT));
-//		}
-//	}
 }
 
 //Task 2: send a packet periodically
@@ -73,11 +55,8 @@ void task2(void *testBuffer) {
 	TickType_t xNextWakeTime;
 	xNextWakeTime = xTaskGetTickCount();
 	const TickType_t xDelay = 1500 / portTICK_PERIOD_MS; //500 ms
-	uint8_t target[] = {192,168,0,100};
 	while (1) {
-//		ETH_send_packet(testBuffer, 514);
-//		usartSend(0xC0); //Packet sent
-//		usartSend(0xC1);
+
 		vTaskDelayUntil(&xNextWakeTime, xDelay);
 	}
 
@@ -85,30 +64,56 @@ void task2(void *testBuffer) {
 
 int main(void) {
 	//local variables
-//	static int i;
-//	uint8_t rlen = 0;
-	uint8_t macAdress[6] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02 };
-	uint8_t deviceIP[4] = { 192, 168, 0, 111 };
-	uint8_t routerIP[4] = { 192, 168, 0, 1 };
-//	static uint8_t testBuffer[514] = { 	0xE8, 0x03, 0x9A, 0xAE, 0x00, 0x9C, //Destination address
-//										0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02, //Source address
-//										0x01, 0xF4, //Type length
-//										0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //Data
+	struct uip_eth_addr macAdress = { { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02 } };
 
 	//Hardware initialization
 	LED_init();
 	ETH_SPI_init();
 	usartInit();
-	IPstackInit();
+	ETH_MAC_init(macAdress.addr);
+
+	uip_init();
+	uip_arp_init();
+	hello_world_init();
+	uip_setethaddr(macAdress);
+
+	uip_ipaddr_t ipaddr;
+	uip_ipaddr(ipaddr, 192, 168, 0, 200);
+	uip_sethostaddr(ipaddr);
+
+	uip_ipaddr(ipaddr, 192, 168, 0, 1);
+	uip_setdraddr(ipaddr);
+
+	uip_ipaddr(ipaddr, 255, 255, 255, 0);
+	uip_setnetmask(ipaddr);
+
 	usartSend(0xC1);
-//	SendArpPacket(deviceIP);
-//	SendArpPacket( routerIP );
 
-	//Fill buffer with some data
-//	for (i = 0; i < 500; i++) {
-//		testBuffer[14 + i] = i * 2;
-//	}
+	while (1) {
+		uip_len = ETH_ReceivePacket((uint8_t *) uip_buf, UIP_BUFSIZE);
+		if (uip_len > 0) {
+			if (BUF->type == htons(UIP_ETHTYPE_IP)) {
 
+				uip_arp_ipin();
+				uip_input();
+				if (uip_len > 0) {
+					/* If the above function invocation resulted in data that
+					 should be sent out on the network, the global variable
+					 uip_len is set to a value > 0. */
+					uip_arp_out();
+					ETH_send_packet((uint8_t *) uip_buf, uip_len);
+					usartSend(0xC2);
+				}
+			} else if (BUF->type == htons(UIP_ETHTYPE_ARP)) {
+
+				uip_arp_arpin();
+				if (uip_len > 0) {
+					ETH_send_packet((uint8_t *) uip_buf, uip_len);
+					usartSend(0xC3);
+				}
+			}
+		}
+	}
 //	Create tasks
 //	xTaskCreate(task1, 						/* The function that implements the task. */
 //				"Task 1", 					/* The text name assigned to the task - for debug only as it is not used by the kernel. */
@@ -129,40 +134,7 @@ int main(void) {
 //	 FreeRTOS web site for more details. */
 //	for (;;)
 //		;
-	static uint8_t packet[MAXPACKETLEN];
-	while (1) GetPacket(0,packet);
-//
-//		rlen = ETH_ReceivePacket(testBuffer, 514);
-////		usartSend(0xC0);
-//
-//		if (rlen != 0){
-//			usartSend(0xC1); //Packet received
-//			usartSend(rlen);
-////			for (i=0; i <rlen; i++){
-////					usartSend(testBuffer[i]);
-////			}
-//			testBuffer[0]=0xE8;
-//			testBuffer[1]=0x03;
-//			testBuffer[2]=0x9A;
-//			testBuffer[3]=0xAE;
-//			testBuffer[4]=0x00;
-//			testBuffer[5]=0x9C;
-//
-//			testBuffer[6]=0x00;
-//			testBuffer[7]=0xAA;
-//			testBuffer[8]=0xBB;
-//			testBuffer[9]=0xCC;
-//			testBuffer[10]=0xDE;
-//			testBuffer[11]=0x02;
-//			ETH_send_packet(testBuffer, rlen);
-//		}
-//
-////		for (i=0; i<1000000; ++i);
-////		GPIO_WriteBit(GPIOB, GPIO_Pin_10, led_state ? Bit_SET : Bit_RESET);
-////		led_state = !led_state;
-////		GPIO_WriteBit(GPIOB, GPIO_Pin_11, led_state ? Bit_SET : Bit_RESET);
-//		}
-//	return 0;
+
 }
 
 void vApplicationMallocFailedHook(void) {
