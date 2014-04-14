@@ -11,25 +11,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/elliana/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/elliana/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1346" selectionTopPixel="511"/>
-</editor>
-<editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">
-<subPage horizontalPosition="0" selectedItemId="47" subPageIndex="2" verticalPosition="132"/>
-</input>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CoOS.h" partName="CoOS.h" path="C:/CooCox/CoIDE/workspace/elliana/CoOS/kernel/CoOS.h" title="CoOS.h" tooltip="C:/CooCox/CoIDE/workspace/elliana/CoOS/kernel/CoOS.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/elliana/CoOS/kernel/CoOS.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2298"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="739" selectionTopPixel="1209"/>
 </editor>
 </editors>
 <views>
@@ -37,15 +25,13 @@
 <viewState/>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="2">
 <expanded>
 <element path="/elliana"/>
 </expanded>
-</viewState>
-</view>
-<view id="org.coocox.builder.ui.exampleView" partName="CooCox OS Examples">
-<viewState>
-<Examples ComponentId="47" Title="CooCox OS"/>
+<selection>
+<element path="/elliana/main.c"/>
+</selection>
 </viewState>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
@@ -59,7 +45,7 @@
 </view>
 </views>
 <perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
 <alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
@@ -88,40 +74,20 @@
 <hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@15773de" orientation="512" selectedTabId="org.coocox.component.ui.Help" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-<view id="org.coocox.component.ui.Help" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1e03f3b" orientation="512" selectedTabId="org.coocox.builder.ui.views.ProjectView" style="1">
-<fastViews>
-<view id="org.coocox.builder.ui.views.ProjectView" ratio="0.29984662"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@9f756" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
-<fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1ccc22d" orientation="256" selectedTabId="org.coocox.component.ui.ComponentView" style="1">
-<fastViews>
-<view id="org.coocox.component.ui.ComponentView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@11665ac" orientation="256" selectedTabId="org.coocox.builder.ui.exampleView" style="1">
-<fastViews>
-<view id="org.coocox.builder.ui.exampleView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.coocox.component.ui.ComponentView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.coocox.component.ui.Help"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1ccc22d">
-<folder appearance="2" expanded="0">
-<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="Components"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
@@ -130,33 +96,40 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f756" ratio="0.64593303" ratioLeft="405" ratioRight="222" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f756" ratio="0.7049442" ratioLeft="442" ratioRight="185" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@11665ac" ratio="0.21944036" ratioLeft="298" ratioRight="1060" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.coocox.builder.ui.exampleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@15773de" ratio="0.7198113" ratioLeft="763" ratioRight="297" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11665ac">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
+<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.coocox.component.ui.Help" label="Help"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.7039801" ratioLeft="283" ratioRight="119" relationship="4" relative="org.eclipse.ui.internal.ViewStack@11665ac"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1e03f3b" ratio="0.36984128" ratioLeft="233" ratioRight="397" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ccc22d">
-<folder appearance="2" expanded="0">
-<page content="org.coocox.builder.ui.views.ProjectView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -168,7 +141,6 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/FreeRTOSConfig.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c"/>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
 <org.coocox.builder.ui.editors.ConfigEditor/>
 </editor>
@@ -176,40 +148,29 @@
 <subPage horizontalPosition="0" selectedItemId="47" subPageIndex="2" verticalPosition="132"/>
 </editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/CoOS/kernel/CoOS.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/enc28j60/enc28j60.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/uip/uip.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/CoOS/kernel/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/uip/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/uip/uip-timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/uip-conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/elliana/uip/uip.c"/>
 </editors>
-<item historyLabel="port.c" index="2">
-<position info="not_deleted" x="13363" y="80"/>
-</item>
-<item historyLabel="FreeRTOSConfig.h" index="1">
-<position info="not_deleted" x="4925" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="814" y="0"/>
-</item>
-<item historyLabel="port.c" index="2">
-<position info="not_deleted" x="13332" y="0"/>
-</item>
 <item historyLabel="FreeRTOSConfig.h" index="1">
 <position info="not_deleted" x="4222" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="814" y="0"/>
 </item>
-<item historyLabel="FreeRTOSConfig.h" index="1">
-<position info="not_deleted" x="4222" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="814" y="0"/>
-</item>
-<item historyLabel="Configuration" index="3"/>
+<item historyLabel="Configuration" index="2"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1604" y="36"/>
 </item>
-<item historyLabel="Repository" index="4"/>
+<item historyLabel="Repository" index="3"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1604" y="36"/>
 </item>
-<item historyLabel="Repository" index="4"/>
+<item historyLabel="Repository" index="3"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1647" y="0"/>
 </item>
@@ -222,7 +183,7 @@
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="640" y="0"/>
 </item>
-<item historyLabel="Repository" index="4"/>
+<item historyLabel="Repository" index="3"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1569" y="0"/>
 </item>
@@ -232,7 +193,7 @@
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1600" y="0"/>
 </item>
-<item historyLabel="Repository" index="4"/>
+<item historyLabel="Repository" index="3"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1600" y="0"/>
 </item>
@@ -257,25 +218,79 @@
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1517" y="0"/>
 </item>
-<item historyLabel="Repository" index="4"/>
+<item historyLabel="Repository" index="3"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1234" y="0"/>
 </item>
-<item historyLabel="Repository" index="4"/>
+<item historyLabel="Repository" index="3"/>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="164" y="0"/>
 </item>
-<item historyLabel="CoOS.h" index="5">
+<item historyLabel="CoOS.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="708" y="0"/>
 </item>
-<item historyLabel="CoOS.h" index="5">
+<item historyLabel="CoOS.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
+<item historyLabel="main.c" index="0">
 <position info="not_deleted" x="708" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="5">
+<position info="not_deleted" x="46" y="13"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="uip.c" index="6">
+<position info="not_deleted" x="11351" y="8"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1958" y="0"/>
+</item>
+<item historyLabel="timer.c" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="timer.c" index="8">
+<position info="not_deleted" x="2002" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2030" y="0"/>
+</item>
+<item historyLabel="uip-timer.c" index="9">
+<position info="not_deleted" x="2002" y="0"/>
+</item>
+<item historyLabel="uip-conf.h" index="10">
+<position info="not_deleted" x="3502" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1462" y="45"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="786" y="0"/>
+</item>
+<item historyLabel="uip.c" index="11">
+<position info="not_deleted" x="28412" y="42"/>
+</item>
+<item historyLabel="uip-conf.h" index="10">
+<position info="not_deleted" x="3110" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2545" y="0"/>
+</item>
+<item historyLabel="enc28j60.h" index="5">
+<position info="not_deleted" x="46" y="13"/>
+</item>
+<item historyLabel="uip.c" index="11">
+<position info="not_deleted" x="28412" y="42"/>
+</item>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="2545" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -284,17 +299,26 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uip.c" tooltip="elliana/uip/uip.c">
+<persistable path="/elliana/uip/uip.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uip-conf.h" tooltip="elliana/uip-conf.h">
+<persistable path="/elliana/uip-conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="timer.c" tooltip="elliana/uip/timer.c">
+<persistable path="/elliana/uip/timer.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="timer.c" tooltip="elliana/CoOS/kernel/timer.c">
+<persistable path="/elliana/CoOS/kernel/timer.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60.h" tooltip="elliana/enc28j60/enc28j60.h">
+<persistable path="/elliana/enc28j60/enc28j60.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CoOS.h" tooltip="elliana/CoOS/kernel/CoOS.h">
 <persistable path="/elliana/CoOS/kernel/CoOS.h"/>
 </file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage horizontalPosition="0" selectedItemId="47" subPageIndex="2" verticalPosition="132"/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
+<persistable>&#x0A;<subPage/>
 </persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" tooltip="elliana/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c">
@@ -309,9 +333,6 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOSConfig.h" tooltip="elliana/FreeRTOSConfig.h">
 <persistable path="/elliana/FreeRTOSConfig.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="enc28j60.h" tooltip="elliana/enc28j60/enc28j60.h">
-<persistable path="/elliana/enc28j60/enc28j60.h"/>
-</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello-world.h" tooltip="C:\CooCox\CoIDE\workspace\elliana\hello-world.h">
 <persistable uri="file:/C:/CooCox/CoIDE/workspace/elliana/hello-world.h"/>
 </file>
@@ -323,9 +344,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ipstack.c" tooltip="elliana/ipstack/ipstack.c">
 <persistable path="/elliana/ipstack/ipstack.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lc-switch.h" tooltip="elliana/uip/lc-switch.h">
-<persistable path="/elliana/uip/lc-switch.h"/>
 </file>
 </mruList>
 </workbench>

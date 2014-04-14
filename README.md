@@ -1,5 +1,5 @@
 elliana
 =======
 
-Ell-i + FreeRTOS + UDP + CoAP.
+Ell-i + CoOS + uIP
 Project can be opened in CoIDE.
